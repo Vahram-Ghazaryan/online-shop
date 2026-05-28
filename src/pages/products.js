@@ -78,7 +78,7 @@ export default function Products() {
       <div className="search-bar">
         <div className="search-input-wrapper">
           <HiSearch />
-          <input className="search-input" placeholder={'Օրոնել...'} value={search} onChange={e => setSearch(e.target.value)} />
+          <input className="search-input" placeholder={'Որոնել...'} value={search} onChange={e => setSearch(e.target.value)} />
         </div>
       </div>
       {filtered.length === 0 ? (
