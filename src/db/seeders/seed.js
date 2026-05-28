@@ -3,6 +3,7 @@ const db = require('../models');
 async function seed() {
   try {
     await db.sequelize.authenticate();
+    await db.sequelize.query('CREATE SCHEMA IF NOT EXISTS "online_shop";');
     await db.sequelize.sync({ force: true });
 
     const sellers = await db.Seller.bulkCreate([

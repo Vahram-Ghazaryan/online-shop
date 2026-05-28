@@ -11,6 +11,9 @@ const sequelize = new Sequelize(
     dialect: config.dialect,
     logging: config.logging,
     pool: config.pool,
+    define: {
+      schema: 'online_shop',
+    }
   }
 );
 
